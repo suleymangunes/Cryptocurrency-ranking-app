@@ -17,13 +17,13 @@ class IntroPages {
   );
   static final Page secondPage = Page(
     path: IntroEnums.work.toJson,
-    title: StringConstants.introTitleFirst.tr(),
-    body: StringConstants.introDescriptionFirst.tr(),
+    title: StringConstants.introTitleSecond.tr(),
+    body: StringConstants.introDescriptionSecond.tr(),
   );
   static final Page thirdPage = Page(
     path: IntroEnums.commerce.toJson,
-    title: StringConstants.introTitleFirst.tr(),
-    body: StringConstants.introDescriptionFirst.tr(),
+    title: StringConstants.introTitleThird.tr(),
+    body: StringConstants.introDescriptionThird.tr(),
   );
 
   static List<PageViewModel> pageList = [

@@ -18,7 +18,7 @@ class Introduction {
     done: const TextMediumTitle(text: 'done'),
     onDone: () {
       IntroCaching.watchIntro();
-      NavigationRoute.goRouteClear(RouteEnum.setting.rawValue);
+      NavigationRoute.goRouteClear(RouteEnum.home.rawValue);
     },
     dotsDecorator: DotsDecoration.decoration,
     baseBtnStyle: TextButton.styleFrom(

@@ -11,9 +11,13 @@
     "langChoose": "Choose Language",
     "skip": "Skip",
     "done": "Done",
-    "introTitleFirst": "Title of Introduction Page",
-    "introDescriptionFirst": "Welcome to the app! This is a description of how it works.",
     "appTitle": "Cryptocurrenct Ranking App",
     "sww": "Something went wrong...",
-    "try": "Try again"
+    "try": "Try again",
+    "introTitleFirst": "CryptoCurrenys Ranking App",
+    "introDescriptionFirst": "Welcome to the app! This is your CryptoCurrenys Ranking App.",
+    "introTitleSecond": "Popular Crypto Coins",
+    "introDescriptionSecond": "You can see popular crypto coins all the time all the where you want to",
+    "introTitleThird": "Real Time Analyse",
+    "introDescriptionThird": "You can analyse crypto coin percent change one hours."
 }

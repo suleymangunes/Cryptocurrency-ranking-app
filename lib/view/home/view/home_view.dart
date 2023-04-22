@@ -1,6 +1,5 @@
 import 'package:cryptocurrency_ranking_app/core/components/icon/error_icon.dart';
 import 'package:cryptocurrency_ranking_app/core/components/text/black_normal_text.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/pads/pads_constants.dart';
 import 'package:cryptocurrency_ranking_app/core/constants/string/string_constants.dart';
 import 'package:cryptocurrency_ranking_app/core/init/cubit/crypto/crypto_cubit.dart';
 import 'package:cryptocurrency_ranking_app/core/init/cubit/crypto/crypto_state.dart';
@@ -17,7 +16,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BlocConsumer<CryptoCubit, CryptoState>(
+      body: BlocBuilder<CryptoCubit, CryptoState>(
         builder: (context, state) {
           switch (state.status) {
             case CryptoStatus.initial:
@@ -28,11 +27,6 @@ class HomeView extends StatelessWidget {
               return _listCrypto(state as CryptoCompleted);
             case CryptoStatus.error:
               return error(context);
-          }
-        },
-        listener: (context, state) {
-          if (state is CryptoError) {
-            return;
           }
         },
       ),
@@ -69,7 +63,7 @@ class HomeView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const ErrorcIcon(),
-          PadsConstanst.spaceNormal,
+          context.lowValue,
           const Text('sww').tr(),
           _tryAgainButton(context),
         ],

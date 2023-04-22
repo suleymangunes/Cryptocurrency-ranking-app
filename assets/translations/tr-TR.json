@@ -11,9 +11,13 @@
     "langChoose": "Dili Seç",
     "skip": "Geç",
     "done": "Başla",
-    "introTitleFirst": "Tanıtım Bayfası Başlığı",
-    "introDescriptionFirst": "Uygulamaya hoşgeldin! Bu nasıl çalıştığıyla ilgili açıklamadır.",
     "appTitle": "Kripto Sıralama Uygulaması",
     "sww": "Bir şeyler ters gitti...",
-    "try": "Tekrar dene"
+    "try": "Tekrar dene",
+    "introTitleFirst": "Kritpto Koin Sıralama Uygulaması",
+    "introDescriptionFirst": "Uygulamaya Hoşgeldin! Bu senin Kripto sıralama uygulaman.",
+    "introTitleSecond": "Popüler Kripto Koinler",
+    "introDescriptionSecond": "İstediğin yerde istediğin zamanda tüm güncel kripto koinleri gör.",
+    "introTitleThird": "Gerçek Zamanlı Analiz",
+    "introDescriptionThird": "Saatlik yüzde değişimine göre koinleri analiz et."
 }

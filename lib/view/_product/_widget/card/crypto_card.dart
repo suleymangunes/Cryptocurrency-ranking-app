@@ -12,13 +12,10 @@ class CryptoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: InkWell(
-        onTap: () {},
-        child: ListTile(
-          leading: IdAndIcon(id: id),
-          title: Text(name),
-          trailing: TextForChangePrice(text: price, change: change),
-        ),
+      child: ListTile(
+        leading: IdAndIcon(id: id),
+        title: Text(name),
+        trailing: TextForChangePrice(text: price, change: change),
       ),
     );
   }

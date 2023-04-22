@@ -76,17 +76,17 @@ class USD {
 
   USD.fromJson(Map<String, dynamic> json) {
     price = (json['price'] == null) ? null : json['price'] + .0;
-    volume24h = (json['volume_24h'] == null) ? null : json['price'] + .0;
-    volumeChange24h = (json['volume_change_24h'] == null) ? null : json['price'] + .0;
-    percentChange1h = (json['percent_change_1h'] == null) ? null : json['price'] + .0;
-    percentChange24h = (json['percent_change_24h'] == null) ? null : json['price'] + .0;
-    percentChange7d = (json['percent_change_7d'] == null) ? null : json['price'] + .0;
-    percentChange30d = (json['percent_change_30d'] == null) ? null : json['price'] + .0;
-    percentChange60d = (json['percent_change_60d'] == null) ? null : json['price'] + .0;
-    percentChange90d = (json['percent_change_90d'] == null) ? null : json['price'] + .0;
-    marketCap = (json['market_cap'] == null) ? null : json['price'] + .0;
-    marketCapDominance = (json['market_cap_dominance'] == null) ? null : json['price'] + .0;
-    fullyDilutedMarketCap = (json['fully_diluted_market_cap'] == null) ? null : json['price'] + .0;
+    volume24h = (json['volume_24h'] == null) ? null : json['volume_24h'] + .0;
+    volumeChange24h = (json['volume_24h'] == null) ? null : json['volume_24h'] + .0;
+    percentChange1h = (json['percent_change_1h'] == null) ? null : json['percent_change_1h'] + .0;
+    percentChange24h = (json['percent_change_24h'] == null) ? null : json['percent_change_24h'] + .0;
+    percentChange7d = (json['percent_change_7d'] == null) ? null : json['percent_change_7d'] + .0;
+    percentChange30d = (json['percent_change_30d'] == null) ? null : json['percent_change_30d'] + .0;
+    percentChange60d = (json['percent_change_60d'] == null) ? null : json['percent_change_60d'] + .0;
+    percentChange90d = (json['percent_change_90d'] == null) ? null : json['percent_change_90d'] + .0;
+    marketCap = (json['market_cap'] == null) ? null : json['market_cap'] + .0;
+    marketCapDominance = (json['market_cap_dominance'] == null) ? null : json['market_cap_dominance'] + .0;
+    fullyDilutedMarketCap = (json['fully_diluted_market_cap'] == null) ? null : json['fully_diluted_market_cap'] + .0;
   }
 
   Map<String, dynamic> toJson() {

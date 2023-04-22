@@ -18,4 +18,7 @@ class StringConstants {
   static const String done = 'done';
   static const String introTitleFirst = 'introTitleFirst';
   static const String introDescriptionFirst = 'introDescriptionFirst';
+  static const String title = 'appTitle';
+  static const String error = 'sww';
+  static const String tryAgain = "try";
 }

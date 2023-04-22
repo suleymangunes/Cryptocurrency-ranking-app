@@ -1,4 +1,4 @@
-import 'package:cryptocurrency_ranking_app/core/init/cubit/theme_cubit.dart';
+import 'package:cryptocurrency_ranking_app/core/init/cubit/radio/theme_cubit.dart';
 import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_route.dart';
 import 'package:cryptocurrency_ranking_app/core/init/theme/dark/dark_theme_custom.dart';
 import 'package:cryptocurrency_ranking_app/core/init/theme/light/light_theme_custom.dart';

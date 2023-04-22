@@ -12,5 +12,8 @@
     "skip": "Skip",
     "done": "Done",
     "introTitleFirst": "Title of Introduction Page",
-    "introDescriptionFirst": "Welcome to the app! This is a description of how it works."
+    "introDescriptionFirst": "Welcome to the app! This is a description of how it works.",
+    "appTitle": "Cryptocurrenct Ranking App",
+    "sww": "Something went wrong...",
+    "try": "Try again"
 }

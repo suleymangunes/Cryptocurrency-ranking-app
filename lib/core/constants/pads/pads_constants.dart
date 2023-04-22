@@ -7,4 +7,5 @@ class PadsConstanst {
   static const SizedBox sizedboxBig = SizedBox(height: SizeConstants.sizedboxBigHeight);
   static const SizedBox introBig = SizedBox(height: 100);
   static const SizedBox introSmall = SizedBox(height: 50);
+  static const SizedBox spaceNormal = SizedBox(height: 25);
 }

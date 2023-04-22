@@ -1,5 +1,5 @@
-import 'package:cryptocurrency_ranking_app/core/init/cubit/radio_cubit.dart';
-import 'package:cryptocurrency_ranking_app/core/init/cubit/theme_cubit.dart';
+import 'package:cryptocurrency_ranking_app/core/init/cubit/radio/radio_cubit.dart';
+import 'package:cryptocurrency_ranking_app/core/init/cubit/radio/theme_cubit.dart';
 import 'package:cryptocurrency_ranking_app/core/constants/string/string_constants.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';

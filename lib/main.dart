@@ -1,6 +1,6 @@
 import 'package:cryptocurrency_ranking_app/app.dart';
 import 'package:cryptocurrency_ranking_app/core/init/cache/onboarding/intro_caching.dart';
-import 'package:cryptocurrency_ranking_app/core/init/cubit/theme_cubit.dart';
+import 'package:cryptocurrency_ranking_app/core/init/cubit/radio/theme_cubit.dart';
 import 'package:cryptocurrency_ranking_app/core/init/cache/theme/theme_caching.dart';
 import 'package:cryptocurrency_ranking_app/core/init/localization/project_locales.dart';
 import 'package:cryptocurrency_ranking_app/cubit_observer.dart';

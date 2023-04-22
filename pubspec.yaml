@@ -51,6 +51,9 @@ dependencies:
   # navigation
   go_router: ^6.5.7
 
+  # service
+  http: ^0.13.5
+
   # state management
   flutter_bloc: ^8.1.2
 
@@ -111,6 +114,7 @@ flutter:
     - assets/icon/
     - assets/translations/
     - assets/intro/
+    - assets/animation/loading/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

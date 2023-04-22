@@ -1,5 +1,6 @@
 import 'package:cryptocurrency_ranking_app/core/components/icon/error_icon.dart';
 import 'package:cryptocurrency_ranking_app/core/components/text/black_normal_text.dart';
+import 'package:cryptocurrency_ranking_app/core/constants/sizedbox/space_sizedbox.dart';
 import 'package:cryptocurrency_ranking_app/core/constants/string/string_constants.dart';
 import 'package:cryptocurrency_ranking_app/core/init/cubit/crypto/crypto_cubit.dart';
 import 'package:cryptocurrency_ranking_app/core/init/cubit/crypto/crypto_state.dart';
@@ -63,7 +64,7 @@ class HomeView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const ErrorcIcon(),
-          context.lowValue,
+          SpaceSizedbox.normalSizedBox,
           const Text('sww').tr(),
           _tryAgainButton(context),
         ],

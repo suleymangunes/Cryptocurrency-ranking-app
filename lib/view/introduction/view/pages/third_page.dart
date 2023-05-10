@@ -1,3 +1,4 @@
+import 'package:cryptocurrency_ranking_app/core/components/text/text_title_large_bold.dart';
 import 'package:cryptocurrency_ranking_app/core/extensions/context/context_extension.dart';
 import 'package:cryptocurrency_ranking_app/view/introduction/view-model/intro_pages.dart';
 import 'package:flutter/material.dart';
@@ -26,10 +27,7 @@ class PageContent extends StatelessWidget {
           context.normalSpace,
           Expanded(child: Lottie.asset(IntroPages.thirdPage.path)),
           context.normalSpace,
-          Text(
-            IntroPages.thirdPage.title,
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
-          ),
+          TextTitleLargerBold(text: IntroPages.thirdPage.title),
         ],
       ),
     );

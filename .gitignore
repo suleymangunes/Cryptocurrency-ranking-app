@@ -44,4 +44,4 @@ app.*.map.json
 /android/app/release
 
 # service keys
-/lib/view/home/service/key.dart
+/lib/view/_product/project-keys/*

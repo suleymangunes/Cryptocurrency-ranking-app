@@ -1,7 +1,7 @@
 import 'package:cryptocurrency_ranking_app/core/components/icon/error_icon.dart';
 import 'package:cryptocurrency_ranking_app/core/components/text/black_normal_text.dart';
 import 'package:cryptocurrency_ranking_app/core/constants/sizedbox/space_sizedbox.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/string/string_constants.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/crypto/crypto_enums.dart';
 import 'package:cryptocurrency_ranking_app/product/widget/lottie/loading_lottie.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/_widget/card/crypto_card.dart';

@@ -1,5 +1,5 @@
 import 'package:cryptocurrency_ranking_app/core/components/text/app_bar_title.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/string/string_constants.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/_widget/icon-button/go_setting_button.dart';
 import 'package:flutter/material.dart';
 

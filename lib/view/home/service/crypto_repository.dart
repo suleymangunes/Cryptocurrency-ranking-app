@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/api_constants.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/api/api_constants.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/service/i_crypto_repository.dart';
 import 'package:cryptocurrency_ranking_app/view/home/model/crypto.dart';
 import 'package:http/http.dart' as http;

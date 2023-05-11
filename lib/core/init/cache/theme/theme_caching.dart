@@ -3,7 +3,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 class ThemeCaching {
   const ThemeCaching._();
-  static final Box _theme = Hive.box('theme');
+  static final Box<dynamic> _theme = Hive.box('theme');
 
   static Future<void> init() async {
     await Hive.initFlutter();

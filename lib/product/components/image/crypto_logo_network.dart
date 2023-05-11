@@ -2,7 +2,10 @@ import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.da
 import 'package:flutter/material.dart';
 
 class CryptoLogoNetwork extends StatelessWidget {
-  const CryptoLogoNetwork({super.key, required this.id});
+  const CryptoLogoNetwork({
+    required this.id,
+    super.key,
+  });
   final String id;
 
   @override

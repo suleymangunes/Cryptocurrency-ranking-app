@@ -2,7 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class BlackNormalText extends StatelessWidget {
-  const BlackNormalText({super.key, required this.text});
+  const BlackNormalText({
+    required this.text,
+    super.key,
+  });
 
   final String text;
 

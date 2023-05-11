@@ -8,6 +8,8 @@ class DotsDecoration {
     size: IntroConstants.dotSquare,
     activeSize: IntroConstants.dotSize,
     spacing: IntroConstants.dotSpacing,
-    activeShape: RoundedRectangleBorder(borderRadius: IntroConstants.dotsBorderCircular),
+    activeShape: RoundedRectangleBorder(
+      borderRadius: IntroConstants.dotsBorderCircular,
+    ),
   );
 }

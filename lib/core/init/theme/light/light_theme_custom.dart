@@ -4,8 +4,6 @@ import 'package:flutter/services.dart';
 part '../../../constants/theme/light_constants.dart';
 
 class LightThemeCustom {
-  late ThemeData theme;
-
   LightThemeCustom() {
     theme = ThemeData.light().copyWith(
       //  CUSTOMIZE AREA
@@ -27,4 +25,5 @@ class LightThemeCustom {
       ),
     );
   }
+  late ThemeData theme;
 }

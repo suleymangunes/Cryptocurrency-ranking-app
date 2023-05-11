@@ -2,7 +2,11 @@ import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.da
 import 'package:flutter/material.dart';
 
 class TextForChangePrice extends StatelessWidget {
-  const TextForChangePrice({super.key, required this.text, required this.change});
+  const TextForChangePrice({
+    required this.text,
+    required this.change,
+    super.key,
+  });
 
   final String text;
   final String change;
@@ -22,8 +26,10 @@ class TextForChangePrice extends StatelessWidget {
   }
 
   Icon _changeIcon() {
-    if (change == "-") {
+    if (change == '-') {
       return IconConstants.priceDown;
+    } else if (change == 'x') {
+      return IconConstants.notFound;
     } else {
       return IconConstants.priceUp;
     }

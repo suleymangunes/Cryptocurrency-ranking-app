@@ -4,9 +4,9 @@ enum IntroEnums {
   commerce('commerce'),
   ;
 
-  final String value;
-
   const IntroEnums(this.value);
+
+  final String value;
 
   String get toJson => 'assets/intro/$value.json';
 }

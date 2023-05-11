@@ -1,9 +1,9 @@
-import 'package:cryptocurrency_ranking_app/core/components/lisstile/changer_listtile_with_dropdown.dart';
 import 'package:cryptocurrency_ranking_app/core/components/dropdown/theme_change_dropdown.dart';
+import 'package:cryptocurrency_ranking_app/core/components/lisstile/changer_listtile_with_dropdown.dart';
 import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
-import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
 import 'package:cryptocurrency_ranking_app/main.dart';
 import 'package:cryptocurrency_ranking_app/product/widget/appbar/setting_appbar.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -28,19 +28,19 @@ class SettingView extends StatelessWidget {
             icon: IconConstants.localizationIcon,
             title: StringConstants.local.tr(),
             alertTitle: StringConstants.langChoose.tr(),
-            child: changeLocalWithDropdown(context),
+            child: _changeLocalWithDropdown(context),
           ),
         ],
       ),
     );
   }
 
-  DropdownButton<dynamic> changeLocalWithDropdown(BuildContext context) {
+  DropdownButton<dynamic> _changeLocalWithDropdown(BuildContext context) {
     return DropdownButton(
       value: context.locale,
       items: LocaleVariables.localItems(),
       onChanged: (value) {
-        context.setLocale(value);
+        context.setLocale(value as Locale);
         Navigator.pop(context);
       },
     );

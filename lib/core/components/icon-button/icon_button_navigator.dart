@@ -2,7 +2,11 @@ import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_route
 import 'package:flutter/material.dart';
 
 class IconButtonNavigatorNormal extends StatelessWidget {
-  const IconButtonNavigatorNormal({super.key, required this.icon, required this.page});
+  const IconButtonNavigatorNormal({
+    required this.icon,
+    required this.page,
+    super.key,
+  });
 
   final Icon icon;
   final String page;

@@ -2,8 +2,8 @@ import 'package:cryptocurrency_ranking_app/product/enum/crypto/crypto_enums.dart
 import 'package:flutter/foundation.dart';
 
 abstract class CryptoState {
-  final CryptoStatus status;
   const CryptoState(this.status);
+  final CryptoStatus status;
 }
 
 class CryptoInitial extends CryptoState {
@@ -15,8 +15,8 @@ class CryptoLoading extends CryptoState {
 }
 
 class CryptoCompleted extends CryptoState {
-  final List response;
   CryptoCompleted(this.response) : super(CryptoStatus.completed);
+  final List<dynamic> response;
 
   @override
   bool operator ==(Object other) {

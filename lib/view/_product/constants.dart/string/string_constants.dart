@@ -20,7 +20,7 @@ class StringConstants {
   static const String introDescriptionFirst = 'introDescriptionFirst';
   static const String title = 'appTitle';
   static const String error = 'sww';
-  static const String tryAgain = "try";
+  static const String tryAgain = 'try';
   static const String introTitleSecond = 'introTitleSecond';
   static const String introDescriptionSecond = 'introDescriptionSecond';
   static const String introTitleThird = 'introTitleThird';

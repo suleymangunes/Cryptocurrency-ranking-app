@@ -2,7 +2,10 @@ import 'package:cryptocurrency_ranking_app/product/components/image/crypto_logo_
 import 'package:flutter/material.dart';
 
 class IdAndIcon extends StatelessWidget {
-  const IdAndIcon({super.key, required this.id});
+  const IdAndIcon({
+    required this.id,
+    super.key,
+  });
   final String id;
 
   @override

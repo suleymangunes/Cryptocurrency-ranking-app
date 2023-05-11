@@ -2,8 +2,8 @@ import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_route
 import 'package:go_router/go_router.dart';
 
 class NavigationRoute {
-  static final GoRouter router = NavigationRouters.router;
   const NavigationRoute._();
+  static final GoRouter router = NavigationRouters.router;
 
   static void goRouteNormal(String route) {
     router.push(route);

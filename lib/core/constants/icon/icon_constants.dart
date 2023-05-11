@@ -13,6 +13,14 @@ class IconConstants {
   static const IconData errorIcon = Icons.error_outline_rounded;
   static const Icon bitcoin = Icon(Icons.currency_bitcoin);
 
-  static const Icon priceUp = Icon(Icons.arrow_drop_up_rounded, color: Colors.green);
-  static const Icon priceDown = Icon(Icons.arrow_drop_down_rounded, color: Colors.red);
+  static const Icon notFound = Icon(Icons.not_interested_outlined);
+
+  static const Icon priceUp = Icon(
+    Icons.arrow_drop_up_rounded,
+    color: Colors.green,
+  );
+  static const Icon priceDown = Icon(
+    Icons.arrow_drop_down_rounded,
+    color: Colors.red,
+  );
 }

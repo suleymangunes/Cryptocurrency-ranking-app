@@ -2,7 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 class AppBarTitle extends StatelessWidget {
-  const AppBarTitle({super.key, required this.title});
+  const AppBarTitle({
+    required this.title,
+    super.key,
+  });
 
   final String title;
   @override

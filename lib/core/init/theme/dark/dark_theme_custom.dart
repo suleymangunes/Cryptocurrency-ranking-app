@@ -4,8 +4,6 @@ import 'package:flutter/services.dart';
 part '../../../constants/theme/dark_constants.dart';
 
 class DarkThemeCustom {
-  late ThemeData theme;
-
   DarkThemeCustom() {
     theme = ThemeData.dark().copyWith(
       //  CUSTOMIZE AREA
@@ -26,4 +24,5 @@ class DarkThemeCustom {
       ),
     );
   }
+  late ThemeData theme;
 }

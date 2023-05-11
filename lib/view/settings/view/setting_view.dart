@@ -1,11 +1,11 @@
-import 'package:cryptocurrency_ranking_app/core/components/dropdown/theme_change_dropdown.dart';
-import 'package:cryptocurrency_ranking_app/core/components/lisstile/changer_listtile_with_dropdown.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
-import 'package:cryptocurrency_ranking_app/main.dart';
-import 'package:cryptocurrency_ranking_app/product/widget/appbar/setting_appbar.dart';
-import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_route.dart';
+import 'package:cryptocurrency_ranking_app/main.dart';
+import 'package:cryptocurrency_ranking_app/product/widget/appbar/setting_appbar.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/_widget/features/locale/change_locale.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/_widget/features/theme/change_theme.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
 
 class SettingView extends StatelessWidget {
   const SettingView({super.key});
@@ -16,20 +16,11 @@ class SettingView extends StatelessWidget {
       appBar: const SettingAppbar(),
       body: Column(
         children: [
-          // theme listtile
-          ChangerListtileWithDropdown(
-            icon: IconConstants.themeIcon,
-            title: StringConstants.theme.tr(),
-            alertTitle: StringConstants.themeChoose.tr(),
-            child: const ThemeChangeDropdown(),
+          ChangeTheme(
+            theme: StringConstants.theme.tr(),
+            themeChoose: StringConstants.themeChoose.tr(),
           ),
-          // localiziton listtile
-          ChangerListtileWithDropdown(
-            icon: IconConstants.localizationIcon,
-            title: StringConstants.local.tr(),
-            alertTitle: StringConstants.langChoose.tr(),
-            child: _changeLocalWithDropdown(context),
-          ),
+          ChangeLocale(dropdown: _changeLocalWithDropdown(context)),
         ],
       ),
     );
@@ -41,7 +32,7 @@ class SettingView extends StatelessWidget {
       items: LocaleVariables.localItems(),
       onChanged: (value) {
         context.setLocale(value as Locale);
-        Navigator.pop(context);
+        NavigationRoute.goBack();
       },
     );
   }

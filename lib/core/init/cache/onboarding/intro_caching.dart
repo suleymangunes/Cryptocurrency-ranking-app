@@ -1,5 +1,5 @@
-import 'package:cryptocurrency_ranking_app/view/_product/enum/route_enum.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/enum/route_enum.dart';
 
 class IntroCaching {
   const IntroCaching._();

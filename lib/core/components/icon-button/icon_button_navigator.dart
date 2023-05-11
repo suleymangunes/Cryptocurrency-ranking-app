@@ -1,5 +1,5 @@
-import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_route.dart';
 import 'package:flutter/material.dart';
+import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_route.dart';
 
 class IconButtonNavigatorNormal extends StatelessWidget {
   const IconButtonNavigatorNormal({

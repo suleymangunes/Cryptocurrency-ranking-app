@@ -13,6 +13,7 @@ class BlackNormalText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      // TODO textstyle olmaz rengi ve degeri typografiyden al
       style: const TextStyle(color: Colors.black),
     ).tr();
   }

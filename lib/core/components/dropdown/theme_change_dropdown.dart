@@ -1,9 +1,9 @@
-import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
-import 'package:cryptocurrency_ranking_app/view/home/view_model/radio/radio_cubit.dart';
-import 'package:cryptocurrency_ranking_app/view/home/view_model/radio/theme_cubit.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
+import 'package:cryptocurrency_ranking_app/view/settings/view-model/radio/radio_cubit.dart';
+import 'package:cryptocurrency_ranking_app/view/settings/view-model/theme/theme_cubit.dart';
 
 class ThemeChangeDropdown extends StatelessWidget {
   const ThemeChangeDropdown({super.key});
@@ -50,6 +50,7 @@ class ThemeChangeDropdown extends StatelessWidget {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
+      // TODO listtile textleri hep ayni onlar icin bir yapi olustur
       title: const Text(StringConstants.sysLight).tr(),
     );
   }

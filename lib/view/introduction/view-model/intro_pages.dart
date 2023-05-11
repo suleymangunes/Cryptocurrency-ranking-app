@@ -1,10 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/intro/intro_enums.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
 import 'package:cryptocurrency_ranking_app/view/introduction/model/page_model.dart';
 import 'package:cryptocurrency_ranking_app/view/introduction/view/pages/first_page.dart';
 import 'package:cryptocurrency_ranking_app/view/introduction/view/pages/second_page.dart';
 import 'package:cryptocurrency_ranking_app/view/introduction/view/pages/third_page.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 class IntroPages {

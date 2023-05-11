@@ -1,9 +1,9 @@
+import 'package:introduction_screen/introduction_screen.dart';
+import 'package:lottie/lottie.dart';
+import 'package:flutter/material.dart';
 import 'package:cryptocurrency_ranking_app/core/components/text/text_title_large_bold.dart';
 import 'package:cryptocurrency_ranking_app/core/extensions/context/context_extension.dart';
 import 'package:cryptocurrency_ranking_app/view/introduction/view-model/intro_pages.dart';
-import 'package:flutter/material.dart';
-import 'package:introduction_screen/introduction_screen.dart';
-import 'package:lottie/lottie.dart';
 
 class SecondPage {
   const SecondPage._();

@@ -1,6 +1,6 @@
-import 'package:cryptocurrency_ranking_app/core/constants/onboarding/intro_constants.dart';
-import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:cryptocurrency_ranking_app/core/constants/onboarding/intro_constants.dart';
 
 class DotsDecoration {
   const DotsDecoration._();

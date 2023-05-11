@@ -12,6 +12,7 @@ class AppBarTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
+      // TODO title degerieriniln tamamını material typography den al
       style: Theme.of(context).textTheme.titleLarge,
     ).tr();
   }

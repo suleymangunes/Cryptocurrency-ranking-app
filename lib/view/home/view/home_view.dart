@@ -1,3 +1,6 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/material.dart';
 import 'package:cryptocurrency_ranking_app/core/components/icon/error_icon.dart';
 import 'package:cryptocurrency_ranking_app/core/components/text/black_normal_text.dart';
 import 'package:cryptocurrency_ranking_app/core/constants/sizedbox/space_sizedbox.dart';
@@ -8,9 +11,6 @@ import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/s
 import 'package:cryptocurrency_ranking_app/view/home/model/crypto.dart';
 import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto/crypto_cubit.dart';
 import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto/crypto_state.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

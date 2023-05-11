@@ -1,5 +1,5 @@
-import 'package:cryptocurrency_ranking_app/product/components/image/crypto_logo_network.dart';
 import 'package:flutter/material.dart';
+import 'package:cryptocurrency_ranking_app/product/components/image/crypto_logo_network.dart';
 
 class IdAndIcon extends StatelessWidget {
   const IdAndIcon({

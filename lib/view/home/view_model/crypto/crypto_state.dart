@@ -1,5 +1,5 @@
-import 'package:cryptocurrency_ranking_app/product/enum/crypto/crypto_enums.dart';
 import 'package:flutter/foundation.dart';
+import 'package:cryptocurrency_ranking_app/product/enum/crypto/crypto_enums.dart';
 
 abstract class CryptoState {
   const CryptoState(this.status);

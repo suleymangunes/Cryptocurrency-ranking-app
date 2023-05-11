@@ -1,5 +1,5 @@
-import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
 
 class ErrorcIcon extends StatelessWidget {
   const ErrorcIcon({super.key});

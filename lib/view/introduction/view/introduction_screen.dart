@@ -2,7 +2,7 @@ import 'package:introduction_screen/introduction_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cryptocurrency_ranking_app/core/components/dots/dots_decoration.dart';
 import 'package:cryptocurrency_ranking_app/core/components/text/text_with_theme_color.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/onboarding/intro_constants.dart';
+import 'package:cryptocurrency_ranking_app/core/constants/onboarding/dots_constants.dart';
 import 'package:cryptocurrency_ranking_app/core/init/cache/onboarding/intro_caching.dart';
 import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_route.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
@@ -24,7 +24,7 @@ class Introduction {
     dotsDecorator: DotsDecoration.decoration,
     baseBtnStyle: TextButton.styleFrom(
       shape: RoundedRectangleBorder(
-        borderRadius: IntroConstants.buttonBorderCircular,
+        borderRadius: DotsConstants().buttonBorderCircular,
       ),
     ),
   );

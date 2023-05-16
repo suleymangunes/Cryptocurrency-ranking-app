@@ -1,5 +1,6 @@
+import 'package:cryptocurrency_ranking_app/core/extensions/icon/change_price_icon_extension.dart';
+import 'package:cryptocurrency_ranking_app/product/enum/icon/change-price/change_price_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
 
 class TextForChangePrice extends StatelessWidget {
   const TextForChangePrice({
@@ -27,11 +28,11 @@ class TextForChangePrice extends StatelessWidget {
 
   Icon _changeIcon() {
     if (change == '-') {
-      return IconConstants.priceDown;
+      return PriceChangeICons.down.getIcon;
     } else if (change == 'x') {
-      return IconConstants.notFound;
+      return PriceChangeICons.notFound.getIcon;
     } else {
-      return IconConstants.priceUp;
+      return PriceChangeICons.up.getIcon;
     }
   }
 }

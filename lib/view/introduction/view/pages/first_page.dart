@@ -1,3 +1,4 @@
+import 'package:cryptocurrency_ranking_app/core/extensions/sizedbox/sized_box.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';

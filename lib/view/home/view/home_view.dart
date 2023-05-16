@@ -1,9 +1,9 @@
+import 'package:cryptocurrency_ranking_app/core/extensions/sizedbox/sized_box.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:cryptocurrency_ranking_app/core/components/icon/error_icon.dart';
 import 'package:cryptocurrency_ranking_app/core/components/text/black_normal_text.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/sizedbox/space_sizedbox.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/crypto/crypto_enums.dart';
 import 'package:cryptocurrency_ranking_app/product/widget/lottie/loading_lottie.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/_widget/card/crypto_card.dart';
@@ -69,7 +69,7 @@ class HomeView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const ErrorcIcon(),
-          SpaceSizedbox.normalSizedBox,
+          context.normalSizedBox,
           const Text(StringConstants.error).tr(),
           _tryAgainButton(context),
         ],

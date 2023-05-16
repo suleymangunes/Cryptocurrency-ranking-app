@@ -1,15 +1,17 @@
+import 'package:cryptocurrency_ranking_app/core/extensions/icon/icon_extension.dart';
+import 'package:cryptocurrency_ranking_app/core/init/theme/color/color_constants.dart';
+import 'package:cryptocurrency_ranking_app/product/enum/icon/exception/exception_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
 
 class ErrorcIcon extends StatelessWidget {
   const ErrorcIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Icon(
-      IconConstants.errorIcon,
-      size: IconConstants.errorIconSize,
-      color: IconConstants.errorColor,
+    return Icon(
+      ExceptionIcons.errorIcon.getIcon,
+      size: context.errorIconSize,
+      color: ColorConstantsCommon.errorColor,
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:cryptocurrency_ranking_app/core/init/theme/build/build_material_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -5,16 +6,17 @@ part '../../../constants/theme/light_constants.dart';
 
 class LightThemeCustom {
   LightThemeCustom() {
-    theme = ThemeData.light().copyWith(
-      //  CUSTOMIZE AREA
+    theme = ThemeData(
+      brightness: Brightness.light,
+      primarySwatch: BuildColor().buildMaterialColor(LightThemeColors._primaryColor),
       primaryColor: LightThemeColors._primaryColor,
       appBarTheme: const AppBarTheme(
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: LightThemeColors._appBarBackground,
+          statusBarColor: LightThemeColors._primaryColor,
           statusBarIconBrightness: Brightness.dark,
         ),
         centerTitle: true,
-        color: LightThemeColors._appBarBackground,
+        color: LightThemeColors._primaryColor,
         titleTextStyle: TextStyle(
           color: Colors.black,
         ),

@@ -96,7 +96,10 @@ class ThemeChangeDropdown extends StatelessWidget {
             break;
         }
       },
-      child: const Text(StringConstants.ok).tr(),
+      child: Text(
+        StringConstants.ok,
+        style: Theme.of(context).textTheme.bodyMedium,
+      ).tr(),
     );
   }
 
@@ -105,7 +108,10 @@ class ThemeChangeDropdown extends StatelessWidget {
       onPressed: () {
         Navigator.pop(context);
       },
-      child: const Text(StringConstants.cancel).tr(),
+      child: Text(
+        StringConstants.cancel,
+        style: Theme.of(context).textTheme.bodyMedium,
+      ).tr(),
     );
   }
 }

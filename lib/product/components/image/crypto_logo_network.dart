@@ -1,5 +1,7 @@
+import 'package:cryptocurrency_ranking_app/core/extensions/icon/icon_extension.dart';
+import 'package:cryptocurrency_ranking_app/product/enum/icon/exception/exception_icons.dart';
+import 'package:cryptocurrency_ranking_app/view/home/service/icon/icon_network.dart';
 import 'package:flutter/material.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
 
 class CryptoLogoNetwork extends StatelessWidget {
   const CryptoLogoNetwork({
@@ -11,11 +13,13 @@ class CryptoLogoNetwork extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.network(
-      'https://s2.coinmarketcap.com/static/img/coins/64x64/$id.png',
-      height: 25,
-      errorBuilder: (context, error, stackTrace) {
-        return IconConstants.bitcoin;
-      },
+      IconNetwork().getIconToNetwork(id),
+      height: context.normalIconSize,
+      errorBuilder: _errorIcon,
     );
+  }
+
+  Widget _errorIcon(context, error, stackTrace) {
+    return Icon(ExceptionIcons.getCoinErrorIcon.getIcon);
   }
 }

@@ -1,6 +1,7 @@
+import 'package:cryptocurrency_ranking_app/core/extensions/icon/get_setting_icons.dart';
+import 'package:cryptocurrency_ranking_app/product/enum/icon/setting/setting_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:cryptocurrency_ranking_app/core/components/icon-button/icon_button_navigator.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/icon/icon_constants.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/enum/route_enum.dart';
 
 class GoSettingButton extends StatelessWidget {
@@ -9,7 +10,7 @@ class GoSettingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButtonNavigatorNormal(
-      icon: IconConstants.settingIcon,
+      icon: SettingIcons.settingIcon.getIcon,
       page: RouteEnum.setting.rawValue,
     );
   }

@@ -1,15 +1,15 @@
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:cryptocurrency_ranking_app/core/constants/onboarding/intro_constants.dart';
+import 'package:cryptocurrency_ranking_app/core/constants/onboarding/dots_constants.dart';
 
 class DotsDecoration {
   const DotsDecoration._();
   static final decoration = DotsDecorator(
-    size: IntroConstants.dotSquare,
-    activeSize: IntroConstants.dotSize,
-    spacing: IntroConstants.dotSpacing,
+    size: DotsConstants().dotSquare,
+    activeSize: DotsConstants().dotSize,
+    spacing: DotsConstants().dotSpacing,
     activeShape: RoundedRectangleBorder(
-      borderRadius: IntroConstants.dotsBorderCircular,
+      borderRadius: DotsConstants().dotsBorderCircular,
     ),
   );
 }

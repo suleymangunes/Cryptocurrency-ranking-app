@@ -14,7 +14,3 @@ extension MediaQueryExtension on BuildContext {
   double get highValue => height * 0.1;
   double get introImageTitle => height * 0.65;
 }
-
-extension SizedSpaceBoxExtension on BuildContext {
-  SizedBox get normalSpace => SizedBox(height: height * 0.1);
-}

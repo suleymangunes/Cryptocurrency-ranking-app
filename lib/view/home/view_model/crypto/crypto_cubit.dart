@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:cryptocurrency_ranking_app/view/home/service/crypto_repository.dart';
+import 'package:cryptocurrency_ranking_app/view/home/service/crypto/crypto_repository.dart';
 import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto/crypto_state.dart';
 
 class CryptoCubit extends Cubit<CryptoState> {

@@ -1,0 +1,4 @@
+enum ExceptionIcons {
+  errorIcon,
+  getCoinErrorIcon,
+}

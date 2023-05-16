@@ -4,7 +4,7 @@ This application ranking popular crypto coins using Coin Market Cap Api.
 
 ## Usage
 
-Add your CoinMarketCap Api key to 'X-CMC_PRO_API_KEY' in lib/view/\_product/constants/api/api_constants.dart file line 9.
+Add your CoinMarketCap Api key to ```'X-CMC_PRO_API_KEY'``` in ```lib/view/_product/constants/api/api_constants.dart``` file line 9.
 
 Architecture
 
@@ -44,17 +44,27 @@ App icon
 
 ## Requirements
 
-<p>Flutter 3.7.11</p>
-<p>Dart 2.19.6</p>
-<p>Packages</p>
-<p>Icons - cupertino_icons: ^1.0.2</p>
-<p>Localization - easy_localization: ^3.0.1</p>
-<p>State management - flutter_bloc: ^8.1.2</p>
-<p>Navigation go_router: - ^6.5.7</p>
-<p>Local storage caching - hive: ^2.2.3, hive_flutter: ^1.1.0</p>
-<p>Service - http: ^0.13.5</p>
-<p>Onboarding - introduction_screen: ^3.1.4</p>
-<p>Animation - lottie: ^2.3.2</p>
+Flutter ```3.7.11```
+
+Dart ```2.19.6```
+
+Packages
+
+Icons - ```cupertino_icons: ^1.0.2```
+
+Localization - ```easy_localization: ^3.0.1```
+
+State management - ```flutter_bloc: ^8.1.2```
+
+Navigation ```go_router: - ^6.5.7```
+
+Local storage caching - ```hive: ^2.2.3```, ```hive_flutter: ^1.1.0```
+
+Service - ```http: ^0.13.5```
+
+Onboarding - ```introduction_screen: ^3.1.4```
+
+Animation - ```lottie: ^2.3.2```
 
 ## Images
 

@@ -1,6 +1,4 @@
-class StringConstants {
-  const StringConstants._();
-
+abstract class ProjectStrings {
   static const String appTitle = 'settingTitle';
   static const String theme = 'theme';
   static const String local = 'appLang';

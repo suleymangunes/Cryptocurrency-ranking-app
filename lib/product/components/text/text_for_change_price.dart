@@ -1,4 +1,6 @@
-import 'package:cryptocurrency_ranking_app/core/extensions/icon/change_price_icon_extension.dart';
+import 'package:cryptocurrency_ranking_app/core/components/text/text_body_medium.dart';
+import 'package:cryptocurrency_ranking_app/core/extensions/context/context_extension.dart';
+import 'package:cryptocurrency_ranking_app/core/extensions/icon/chage-price/change_price_icon_extension.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/icon/change-price/change_price_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -15,12 +17,12 @@ class TextForChangePrice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 90,
+      width: context.priceArea,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           _changeIcon(),
-          Text(text),
+          TextBodyMedium(text: text),
         ],
       ),
     );

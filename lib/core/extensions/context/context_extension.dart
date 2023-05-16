@@ -13,4 +13,6 @@ extension MediaQueryExtension on BuildContext {
   double get mediumValue => height * 0.04;
   double get highValue => height * 0.1;
   double get introImageTitle => height * 0.65;
+  double get priceArea => width * 0.3;
+  double get idArea => width * 0.15;
 }

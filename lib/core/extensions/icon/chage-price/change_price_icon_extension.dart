@@ -1,3 +1,4 @@
+import 'package:cryptocurrency_ranking_app/core/init/theme/color/color_constants.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/icon/change-price/change_price_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -18,11 +19,11 @@ extension PriceChangeIconColor on PriceChangeICons {
   Color get getColor {
     switch (this) {
       case PriceChangeICons.up:
-        return Colors.green;
+        return ColorConstantsCommon.priceUpColor;
       case PriceChangeICons.down:
-        return Colors.red;
+        return ColorConstantsCommon.priceDownColor;
       case PriceChangeICons.notFound:
-        return Colors.grey;
+        return ColorConstantsCommon.priceNotFoundColor;
     }
   }
 }

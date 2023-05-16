@@ -8,7 +8,9 @@ class LightThemeCustom {
   LightThemeCustom() {
     theme = ThemeData(
       brightness: Brightness.light,
-      primarySwatch: BuildColor().buildMaterialColor(LightThemeColors._primaryColor),
+      primarySwatch: BuildColor().buildMaterialColor(
+        LightThemeColors._primaryColor,
+      ),
       primaryColor: LightThemeColors._primaryColor,
       appBarTheme: const AppBarTheme(
         systemOverlayStyle: SystemUiOverlayStyle(
@@ -18,7 +20,7 @@ class LightThemeCustom {
         centerTitle: true,
         color: LightThemeColors._primaryColor,
         titleTextStyle: TextStyle(
-          color: Colors.black,
+          color: LightThemeIcon._iconColor,
         ),
         iconTheme: IconThemeData(),
       ),

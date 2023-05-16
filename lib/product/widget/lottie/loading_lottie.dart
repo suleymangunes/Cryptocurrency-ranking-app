@@ -1,7 +1,7 @@
 import 'package:cryptocurrency_ranking_app/core/extensions/lottie/lottie_extension.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/lottie/lottie_files.dart';
-import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class LoadingLottie extends StatelessWidget {
   const LoadingLottie({super.key});

@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:cryptocurrency_ranking_app/core/components/text/text_title_medium.dart';
 import 'package:cryptocurrency_ranking_app/product/components/text/text_for_change_price.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/_widget/leading/id_and_icon.dart';
+import 'package:flutter/material.dart';
 
 class CryptoCard extends StatelessWidget {
   const CryptoCard({
@@ -20,7 +21,7 @@ class CryptoCard extends StatelessWidget {
     return Card(
       child: ListTile(
         leading: IdAndIcon(id: id),
-        title: Text(name),
+        title: TextTitleMedium(text: name),
         trailing: TextForChangePrice(text: price, change: change),
       ),
     );

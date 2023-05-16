@@ -1,5 +1,5 @@
-import 'package:go_router/go_router.dart';
 import 'package:cryptocurrency_ranking_app/core/init/navigation/navigation_routers.dart';
+import 'package:go_router/go_router.dart';
 
 class NavigationRoute {
   const NavigationRoute._();

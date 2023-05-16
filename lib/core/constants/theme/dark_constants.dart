@@ -7,6 +7,5 @@ class DarkThemeColors {
 
 class DarkThemeIcon {
   const DarkThemeIcon._();
-
   static const Color _iconColor = Colors.white;
 }

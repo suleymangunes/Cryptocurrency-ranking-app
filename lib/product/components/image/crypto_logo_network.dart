@@ -1,4 +1,4 @@
-import 'package:cryptocurrency_ranking_app/core/extensions/icon/icon_extension.dart';
+import 'package:cryptocurrency_ranking_app/core/extensions/icon/exception/exception_icon_extension.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/icon/exception/exception_icons.dart';
 import 'package:cryptocurrency_ranking_app/view/home/service/icon/icon_network.dart';
 import 'package:flutter/material.dart';

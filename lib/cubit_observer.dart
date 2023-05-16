@@ -1,5 +1,5 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dart:developer';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CubitObserver extends BlocObserver {
   @override

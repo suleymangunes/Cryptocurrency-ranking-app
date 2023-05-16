@@ -1,16 +1,15 @@
-import 'package:cryptocurrency_ranking_app/core/extensions/sizedbox/sized_box.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
 import 'package:cryptocurrency_ranking_app/core/components/icon/error_icon.dart';
-import 'package:cryptocurrency_ranking_app/core/components/text/black_normal_text.dart';
+import 'package:cryptocurrency_ranking_app/core/components/text/text_body_medium.dart';
+import 'package:cryptocurrency_ranking_app/core/extensions/sizedbox/sized_box.dart';
 import 'package:cryptocurrency_ranking_app/product/enum/crypto/crypto_enums.dart';
 import 'package:cryptocurrency_ranking_app/product/widget/lottie/loading_lottie.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/_widget/card/crypto_card.dart';
-import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants/string/project_strings.dart';
 import 'package:cryptocurrency_ranking_app/view/home/model/crypto.dart';
-import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto/crypto_cubit.dart';
-import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto/crypto_state.dart';
+import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto_cubit.dart';
+import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto_state.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -40,7 +39,7 @@ class HomeView extends StatelessWidget {
       onPressed: () {
         context.read<CryptoCubit>().ranking();
       },
-      child: const BlackNormalText(text: StringConstants.tryAgain),
+      child: const TextBodyMedium(text: ProjectStrings.tryAgain),
     );
   }
 
@@ -70,7 +69,7 @@ class HomeView extends StatelessWidget {
         children: [
           const ErrorcIcon(),
           context.normalSizedBox,
-          const Text(StringConstants.error).tr(),
+          const TextBodyMedium(text: ProjectStrings.error),
           _tryAgainButton(context),
         ],
       ),

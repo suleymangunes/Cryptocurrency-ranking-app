@@ -1,3 +1,5 @@
+import 'package:cryptocurrency_ranking_app/core/components/text/centered_text.dart';
+import 'package:cryptocurrency_ranking_app/core/components/text/text_title_medium.dart';
 import 'package:flutter/material.dart';
 
 class ChangerListtileWithDropdown extends StatelessWidget {
@@ -22,7 +24,7 @@ class ChangerListtileWithDropdown extends StatelessWidget {
       },
       child: ListTile(
         leading: icon,
-        title: Text(title),
+        title: TextTitleMedium(text: title),
       ),
     );
   }
@@ -31,7 +33,7 @@ class ChangerListtileWithDropdown extends StatelessWidget {
     return showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text(alertTitle, textAlign: TextAlign.center),
+        title: CenteredText(title: title),
         content: child,
       ),
     );

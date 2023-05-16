@@ -7,6 +7,11 @@ class LocaleVariables {
   static const String _localesPath = 'assets/translations';
   static const Locale _fallBackLocale = Locale('en', 'US');
 
+  static Future<void> _init() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await EasyLocalization.ensureInitialized();
+  }
+
   static List<DropdownMenuItem<dynamic>> localItems() {
     final menuItems = <DropdownMenuItem<dynamic>>[];
     for (final element in _localesList) {
@@ -18,10 +23,5 @@ class LocaleVariables {
       );
     }
     return menuItems;
-  }
-
-  static Future<void> _init() async {
-    WidgetsFlutterBinding.ensureInitialized();
-    await EasyLocalization.ensureInitialized();
   }
 }

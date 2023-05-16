@@ -2,7 +2,7 @@ import 'package:cryptocurrency_ranking_app/core/extensions/context/context_exten
 import 'package:cryptocurrency_ranking_app/product/enum/icon/exception/exception_icons.dart';
 import 'package:flutter/material.dart';
 
-extension IconExtension on BuildContext {
+extension ExceptionIconExtension on BuildContext {
   double get errorIconSize => width * 0.15;
   double get normalIconSize => width * 0.08;
 }

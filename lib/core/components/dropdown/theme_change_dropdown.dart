@@ -1,9 +1,10 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
-import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
+import 'package:cryptocurrency_ranking_app/core/components/text/text_body_medium.dart';
+import 'package:cryptocurrency_ranking_app/core/components/text/text_title_medium.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants/string/project_strings.dart';
 import 'package:cryptocurrency_ranking_app/view/settings/view-model/radio/radio_cubit.dart';
 import 'package:cryptocurrency_ranking_app/view/settings/view-model/theme/theme_cubit.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ThemeChangeDropdown extends StatelessWidget {
   const ThemeChangeDropdown({super.key});
@@ -31,40 +32,40 @@ class ThemeChangeDropdown extends StatelessWidget {
   ListTile _darkRadio(String state, BuildContext context) {
     return ListTile(
       leading: Radio(
-        value: StringConstants.darkRadio,
+        //
+        value: ProjectStrings.darkRadio,
         groupValue: state,
         onChanged: (value) {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysDark).tr(),
+      title: const TextTitleMedium(text: ProjectStrings.sysDark),
     );
   }
 
   ListTile _lightRadio(String state, BuildContext context) {
     return ListTile(
       leading: Radio(
-        value: StringConstants.lightRadio,
+        value: ProjectStrings.lightRadio,
         groupValue: state,
         onChanged: (value) {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      // TODO listtile textleri hep ayni onlar icin bir yapi olustur
-      title: const Text(StringConstants.sysLight).tr(),
+      title: const TextTitleMedium(text: ProjectStrings.sysLight),
     );
   }
 
   ListTile _systemRadio(String state, BuildContext context) {
     return ListTile(
       leading: Radio(
-        value: StringConstants.sysRadio,
+        value: ProjectStrings.sysRadio,
         groupValue: state,
         onChanged: (value) {
           context.read<RadioCubit>().changeValue(value.toString());
         },
       ),
-      title: const Text(StringConstants.sysDefault).tr(),
+      title: const TextTitleMedium(text: ProjectStrings.sysDefault),
     );
   }
 
@@ -82,11 +83,11 @@ class ThemeChangeDropdown extends StatelessWidget {
     return TextButton(
       onPressed: () {
         switch (state) {
-          case StringConstants.lightRadio:
+          case ProjectStrings.lightRadio:
             BlocProvider.of<ThemeCubit>(context).makelight();
             Navigator.pop(context);
             break;
-          case StringConstants.darkRadio:
+          case ProjectStrings.darkRadio:
             BlocProvider.of<ThemeCubit>(context).makeDark();
             Navigator.pop(context);
             break;
@@ -96,10 +97,7 @@ class ThemeChangeDropdown extends StatelessWidget {
             break;
         }
       },
-      child: Text(
-        StringConstants.ok,
-        style: Theme.of(context).textTheme.bodyMedium,
-      ).tr(),
+      child: const TextBodyMedium(text: ProjectStrings.ok),
     );
   }
 
@@ -108,10 +106,7 @@ class ThemeChangeDropdown extends StatelessWidget {
       onPressed: () {
         Navigator.pop(context);
       },
-      child: Text(
-        StringConstants.cancel,
-        style: Theme.of(context).textTheme.bodyMedium,
-      ).tr(),
+      child: const TextBodyMedium(text: ProjectStrings.cancel),
     );
   }
 }

@@ -1,18 +1,18 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-class TextMediumTitle extends StatelessWidget {
-  const TextMediumTitle({
-    required this.text,
+class TextTitleLarge extends StatelessWidget {
+  const TextTitleLarge({
+    required this.title,
     super.key,
   });
-  final String text;
 
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Text(
-      text,
-      style: Theme.of(context).textTheme.titleMedium,
+      title,
+      style: Theme.of(context).textTheme.titleLarge,
     ).tr();
   }
 }

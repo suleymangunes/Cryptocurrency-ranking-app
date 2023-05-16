@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:cryptocurrency_ranking_app/core/components/text/app_bar_title.dart';
-import 'package:cryptocurrency_ranking_app/view/_product/constants.dart/string/string_constants.dart';
+import 'package:cryptocurrency_ranking_app/core/components/text/text_title_large.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/_widget/icon-button/go_setting_button.dart';
+import 'package:cryptocurrency_ranking_app/view/_product/constants/string/project_strings.dart';
+import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
   const HomeAppBar({
@@ -11,7 +11,7 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const AppBarTitle(title: StringConstants.title),
+      title: const TextTitleLarge(title: ProjectStrings.title),
       actions: const [GoSettingButton()],
     );
   }

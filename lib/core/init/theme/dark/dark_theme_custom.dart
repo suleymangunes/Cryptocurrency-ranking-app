@@ -17,7 +17,7 @@ class DarkThemeCustom {
         centerTitle: true,
         color: DarkThemeColors._appBarBackground,
         titleTextStyle: TextStyle(
-          color: Colors.white,
+          color: DarkThemeIcon._iconColor,
         ),
         iconTheme: IconThemeData(),
       ),

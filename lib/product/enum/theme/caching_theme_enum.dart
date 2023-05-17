@@ -1,0 +1,4 @@
+enum CachingThemeEnum {
+  theme,
+  isLight,
+}

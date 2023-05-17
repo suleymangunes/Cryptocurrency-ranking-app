@@ -1,17 +1,18 @@
+import 'package:cryptocurrency_ranking_app/product/enum/intro/caching_intro_enums.dart';
 import 'package:cryptocurrency_ranking_app/view/_product/enum/route_enum.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class IntroCaching {
   const IntroCaching._();
 
-  static final Box<dynamic> _intro = Hive.box('intro');
+  static final Box<dynamic> _intro = Hive.box(CachingIntroEnum.intro.name);
 
   static Future<void> init() async {
-    await Hive.openBox('intro');
+    await Hive.openBox(CachingIntroEnum.intro.name);
   }
 
   static String initialIntro() {
-    switch (_intro.get('introWatched')) {
+    switch (_intro.get(CachingIntroEnum.introWatched.name)) {
       case true:
         return RouteEnum.home.rawValue;
       default:
@@ -20,6 +21,6 @@ class IntroCaching {
   }
 
   static void watchIntro() {
-    _intro.put('introWatched', true);
+    _intro.put(CachingIntroEnum.introWatched.name, true);
   }
 }

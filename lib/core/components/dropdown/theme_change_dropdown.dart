@@ -32,7 +32,6 @@ class ThemeChangeDropdown extends StatelessWidget {
   ListTile _darkRadio(String state, BuildContext context) {
     return ListTile(
       leading: Radio(
-        //
         value: ProjectStrings.darkRadio,
         groupValue: state,
         onChanged: (value) {

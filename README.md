@@ -54,21 +54,23 @@ Dart ```2.19.6```
 
 Packages
 
-Icons - ```cupertino_icons: ^1.0.2```
-
-Localization - ```easy_localization: ^3.0.1```
+Dependency Injection - ```get_it: ^7.6.0```
 
 State management - ```flutter_bloc: ^8.1.2```
 
+Service - ```http: ^0.13.5, dio: ^5.1.2```
+
 Navigation ```go_router: - ^6.5.7```
 
-Local storage caching - ```hive: ^2.2.3```, ```hive_flutter: ^1.1.0```
+Caching - ```hive: ^2.2.3```, ```hive_flutter: ^1.1.0```
 
-Service - ```http: ^0.13.5```
+Localization - ```easy_localization: ^3.0.1```
 
 Onboarding - ```introduction_screen: ^3.1.4```
 
 Animation - ```lottie: ^2.3.2```
+
+Icons - ```cupertino_icons: ^1.0.2```
 
 ## Images
 

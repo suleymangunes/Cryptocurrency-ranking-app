@@ -1,6 +1,6 @@
 import 'package:cryptocurrency_ranking_app/view/home/model/crypto.dart';
 
-abstract class ICryptoRepository {
-  const ICryptoRepository();
+abstract class ICryptoDataSource {
+  const ICryptoDataSource();
   Future<List<Crypto>> fetchData();
 }

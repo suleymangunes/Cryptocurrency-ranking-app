@@ -31,6 +31,9 @@ dependencies:
   # icons
   cupertino_icons: ^1.0.2
 
+  # service
+  dio: ^5.1.2
+
   # localization
   easy_localization: ^3.0.1
 

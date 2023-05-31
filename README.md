@@ -6,39 +6,43 @@ This application ranking popular crypto coins using Coin Market Cap Api.
 
 Add your CoinMarketCap Api key to ```'X-CMC_PRO_API_KEY'``` in ```lib/view/_product/constants/api/api_constants.dart``` file line 9.
 
-Architecture
+#### Architecture
 
 - Mvvm, Mvc
 
-State Management
+#### State Management
 
 - Cubit (bloc)
 
-Service
+#### Dependency Injection
 
-- Http
+- get it
 
-Routing
+#### Service
+
+- Http, Dio
+
+#### Routing
 
 - Go router
 
-Animation
+#### Animation
 
 - Lottie
 
-Splash Screen
+#### Splash Screen
 
 - Flutter native splash
 
-Onboarding
+#### Onboarding
 
 - Introduction screen
 
-Localization
+#### Localization
 
 - Easy localization
 
-App icon
+#### App icon
 
 - Flutter Launcher Icon
 

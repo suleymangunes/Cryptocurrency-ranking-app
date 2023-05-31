@@ -3,6 +3,7 @@ import 'package:cryptocurrency_ranking_app/core/init/cache/onboarding/intro_cach
 import 'package:cryptocurrency_ranking_app/core/init/cache/theme/theme_caching.dart';
 import 'package:cryptocurrency_ranking_app/core/init/localization/project_locales.dart';
 import 'package:cryptocurrency_ranking_app/cubit_observer.dart';
+import 'package:cryptocurrency_ranking_app/view/home/service/get-it/get_it_source.dart';
 import 'package:cryptocurrency_ranking_app/view/settings/view-model/theme/theme_cubit.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,7 @@ Future<void> main() async {
   await LocaleVariables._init();
   await ThemeCaching.init();
   await IntroCaching.init();
+  GetItSource.setup();
   Bloc.observer = CubitObserver();
 
   runApp(

@@ -23,15 +23,14 @@ class CryptoDataSourceWithHttp extends ICryptoDataSource {
 }
 
 class CryptoDataSourceWithDio extends ICryptoDataSource {
-  CryptoDataSourceWithDio() {
+  CryptoDataSourceWithDio({required this.dio}) {
     url = ApiConstants.url;
     header = ApiConstants.header;
-    dio = Dio();
   }
 
   late String url;
   late Map<String, String> header;
-  late final Dio dio;
+  final Dio dio;
 
   @override
   Future<List<Crypto>> fetchData() async {

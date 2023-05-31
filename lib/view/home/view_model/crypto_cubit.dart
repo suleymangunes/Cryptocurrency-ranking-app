@@ -5,13 +5,13 @@ import 'package:cryptocurrency_ranking_app/view/_product/service/i_crypto_data_s
 import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto_state.dart';
 
 class CryptoCubit extends Cubit<CryptoState> {
-  CryptoCubit(this._cryptoDataSource) : super(CryptoInitial());
-  final ICryptoDataSource _cryptoDataSource;
+  CryptoCubit({required this.cryptoDataSource}) : super(CryptoInitial());
+  final ICryptoDataSource cryptoDataSource;
 
   Future<void> ranking() async {
     try {
       emit(CryptoLoading());
-      final response = await _cryptoDataSource.fetchData();
+      final response = await cryptoDataSource.fetchData();
       emit(CryptoCompleted(response));
     } catch (e) {
       emit(CryptoError());

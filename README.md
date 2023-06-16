@@ -1,6 +1,10 @@
 # Cryptocurrency Ranking App
 
-This application ranking popular crypto coins using Coin Market Cap Api.
+This application ranking popular crypto coins using Coin Market Cap Api built Flutter.
+
+<p>
+  <img src="assets\readme\cryptocurrency_video.gif" width="200">
+</p>
 
 ## Usage
 
@@ -100,8 +104,4 @@ Icons - ```cupertino_icons: ^1.0.2```
 </p>
 <br>
 
-## Gif
 
-<p>
-  <img src="assets\readme\cryptocurrency_video.gif" width="200">
-</p>

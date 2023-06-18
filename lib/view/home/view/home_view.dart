@@ -52,9 +52,9 @@ class HomeView extends StatelessWidget {
         if (model != null && model is Crypto) {
           return CryptoCard(
             id: (index + 1).toString(),
-            price: model.quote?.uSD?.price?.toStringAsFixed(2) ?? 'x',
+            price: model.quote?.uSD?.price?.toStringAsFixed(2) ?? ProjectStrings.notFound,
             name: model.name.toString(),
-            change: model.quote?.uSD?.percentChange1h.toString()[0] ?? 'x',
+            change: model.quote?.uSD?.percentChange1h.toString()[0] ?? ProjectStrings.notFound,
           );
         }
         return const SizedBox.shrink();

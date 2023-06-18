@@ -3,7 +3,13 @@ import 'package:cryptocurrency_ranking_app/view/_product/enum/route_enum.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class IntroCaching {
-  const IntroCaching._();
+  static final IntroCaching _introCaching = IntroCaching._internal();
+
+  factory IntroCaching() {
+    return _introCaching;
+  }
+
+  IntroCaching._internal();
 
   static final Box<dynamic> _intro = Hive.box(CachingIntroEnum.intro.name);
 

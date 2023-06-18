@@ -6,7 +6,7 @@ class LightThemeCustom {
   LightThemeCustom() {
     theme = ThemeData(
       brightness: Brightness.light,
-      colorSchemeSeed: LightThemeColors._primaryColor,
+      colorSchemeSeed: LightThemeColors._pictonBlue,
       useMaterial3: true,
     );
   }

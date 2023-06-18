@@ -19,11 +19,11 @@ extension PriceChangeIconColor on PriceChangeICons {
   Color get getColor {
     switch (this) {
       case PriceChangeICons.up:
-        return ColorConstantsCommon.priceUpColor;
+        return ColorConstantsCommon.malachite;
       case PriceChangeICons.down:
-        return ColorConstantsCommon.priceDownColor;
+        return ColorConstantsCommon.scarlet;
       case PriceChangeICons.notFound:
-        return ColorConstantsCommon.priceNotFoundColor;
+        return ColorConstantsCommon.dustyGrey;
     }
   }
 }

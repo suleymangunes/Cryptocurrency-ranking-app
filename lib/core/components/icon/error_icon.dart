@@ -11,7 +11,7 @@ class ErrorcIcon extends StatelessWidget {
     return Icon(
       ExceptionIcons.errorIcon.getIcon,
       size: context.errorIconSize,
-      color: ColorConstantsCommon.errorColor,
+      color: ColorConstantsCommon.scarlet,
     );
   }
 }

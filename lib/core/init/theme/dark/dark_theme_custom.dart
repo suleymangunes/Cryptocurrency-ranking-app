@@ -7,7 +7,7 @@ class DarkThemeCustom {
     theme = ThemeData(
       brightness: Brightness.dark,
       useMaterial3: true,
-      colorSchemeSeed: DarkThemeColors._appBarBackground,
+      colorSchemeSeed: DarkThemeColors._torchRed,
     );
   }
   late ThemeData theme;

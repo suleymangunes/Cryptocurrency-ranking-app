@@ -4,8 +4,3 @@ class DarkThemeColors {
   const DarkThemeColors._();
   static const Color _appBarBackground = Color.fromARGB(255, 3, 31, 38);
 }
-
-class DarkThemeIcon {
-  const DarkThemeIcon._();
-  static const Color _iconColor = Colors.white;
-}

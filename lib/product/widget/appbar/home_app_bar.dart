@@ -3,7 +3,7 @@ import 'package:cryptocurrency_ranking_app/view/_product/_widget/icon-button/go_
 import 'package:cryptocurrency_ranking_app/view/_product/constants/string/project_strings.dart';
 import 'package:flutter/material.dart';
 
-class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
+class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({
     super.key,
   });

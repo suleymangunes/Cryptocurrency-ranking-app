@@ -2,7 +2,7 @@ import 'package:cryptocurrency_ranking_app/core/components/text/text_title_large
 import 'package:cryptocurrency_ranking_app/view/_product/constants/string/project_strings.dart';
 import 'package:flutter/material.dart';
 
-class SettingAppbar extends StatelessWidget with PreferredSizeWidget {
+class SettingAppbar extends StatelessWidget implements PreferredSizeWidget {
   const SettingAppbar({
     super.key,
   });

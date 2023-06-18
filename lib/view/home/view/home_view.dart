@@ -25,7 +25,7 @@ class HomeView extends StatelessWidget {
             case CryptoStatus.loading:
               return const LoadingLottie();
             case CryptoStatus.completed:
-              return _listCrypto(state as CryptoCompleted);
+              return _listCrypto(state);
             case CryptoStatus.error:
               return _error(context);
           }
@@ -43,7 +43,7 @@ class HomeView extends StatelessWidget {
     );
   }
 
-  ListView _listCrypto(CryptoCompleted state) {
+  ListView _listCrypto(state) {
     return ListView.builder(
       physics: const BouncingScrollPhysics(),
       itemCount: state.response.length,

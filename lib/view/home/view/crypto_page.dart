@@ -1,12 +1,11 @@
 import 'package:cryptocurrency_ranking_app/product/widget/appbar/home_app_bar.dart';
-import 'package:cryptocurrency_ranking_app/view/home/service/crypto/crypto_repository.dart';
-import 'package:cryptocurrency_ranking_app/view/home/service/get-it/get_it_source.dart';
 import 'package:cryptocurrency_ranking_app/view/home/view/home_view.dart';
 import 'package:cryptocurrency_ranking_app/view/home/view_model/crypto_cubit.dart';
+import 'package:cryptocurrency_ranking_app/view/home/view_model/get_it_instance.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CryptoPage extends StatelessWidget {
+class CryptoPage extends StatelessWidget with GetItInstance {
   const CryptoPage({super.key});
 
   @override
@@ -14,7 +13,7 @@ class CryptoPage extends StatelessWidget {
     return Scaffold(
       appBar: const HomeAppBar(),
       body: BlocProvider(
-        create: (context) => CryptoCubit(cryptoDataSource: GetItSource.getIt<CryptoDataSourceWithHttp>())..ranking(),
+        create: (context) => CryptoCubit(cryptoDataSource: getHttp())..ranking(),
         child: const HomeView(),
       ),
     );

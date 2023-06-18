@@ -45,3 +45,6 @@ app.*.map.json
 
 # service keys
 /lib/view/_product/project-keys/*
+
+# enviroment
+*.env

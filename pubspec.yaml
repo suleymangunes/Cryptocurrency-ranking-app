@@ -28,6 +28,9 @@ dependencies:
   # state management
   flutter_bloc: ^8.1.2
 
+  # configure env file
+  flutter_dotenv: ^5.1.0
+
   # service locator
   get_it: ^7.6.0
 
@@ -105,3 +108,4 @@ flutter:
     - assets/translations/
     - assets/intro/
     - assets/animation/
+    - .env

@@ -8,6 +8,7 @@ import 'package:cryptocurrency_ranking_app/view/settings/view-model/theme/theme_
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 part 'core/init/localization/localization.dart';
 
@@ -15,6 +16,7 @@ Future<void> main() async {
   await LocaleVariables._init();
   await ThemeCaching.init();
   await IntroCaching.init();
+  await dotenv.load();
   GetItSource.setup();
   Bloc.observer = CubitObserver();
 

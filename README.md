@@ -8,75 +8,63 @@ This application ranking popular crypto coins using Coin Market Cap Api built Fl
 
 ## Usage
 
-Add your CoinMarketCap Api key to ```'X-CMC_PRO_API_KEY'``` in ```lib/view/_product/constants/api/api_constants.dart``` file line 9.
+Create .env file in home directory. Define the coinmarketCap key so that the key value is `COIN_MARKET_CAP_API_KEY`.
 
-#### Architecture
+### Architecture
 
-- Mvvm, Mvc
+- Mvvm
 
-#### State Management
+### State Management
 
 - Cubit (bloc)
 
-#### Dependency Injection
-
-- get it
-
-#### Service
-
-- Http, Dio
-
-#### Routing
-
-- Go router
-
-#### Animation
-
-- Lottie
-
-#### Splash Screen
-
-- Flutter native splash
-
-#### Onboarding
-
-- Introduction screen
-
-#### Localization
-
-- Easy localization
-
-#### App icon
-
-- Flutter Launcher Icon
-
 ## Requirements
 
-Flutter ```3.7.11```
+Flutter `3.10.4`
 
-Dart ```2.19.6```
+Dart `3.0.3`
 
-Packages
+### Dependencies
 
-Dependency Injection - ```get_it: ^7.6.0```
+State management - `flutter_bloc: ^8.1.2`
 
-State management - ```flutter_bloc: ^8.1.2```
+Dependency Injection - `get_it: ^7.6.0`
 
-Service - ```http: ^0.13.5, dio: ^5.1.2```
+Json Code Generation - `json_serializable: ^6.7.0, json_annotation: ^4.8.1`
 
-Navigation ```go_router: - ^6.5.7```
+Object Equality - `equatable: ^2.0.5`
 
-Caching - ```hive: ^2.2.3```, ```hive_flutter: ^1.1.0```
+Enviroment Values - `flutter_dotenv: ^5.1.0`
 
-Localization - ```easy_localization: ^3.0.1```
+Service - `http: ^0.13.5, dio: ^5.1.2`
 
-Onboarding - ```introduction_screen: ^3.1.4```
+Routing `go_router: - ^6.5.7`
 
-Animation - ```lottie: ^2.3.2```
+Caching - `hive: ^2.2.3`, `hive_flutter: ^1.1.0`
 
-Icons - ```cupertino_icons: ^1.0.2```
+Localization - `easy_localization: ^3.0.1`
+
+Onboarding - `introduction_screen: ^3.1.4`
+
+Animation - `lottie: ^2.3.2`
+
+Icons - `cupertino_icons: ^1.0.2`
+
+### Developer Dependencies
+
+Splash Screen - `flutter_native_splash: ^2.2.19`
+
+Linter - `very_good_analysis: ^4.0.0, flutter_lints: ^2.0.0`
+
+App Icon - `flutter_launcher_icons: ^0.13.0`
+
+Caching Code Generator - `hive_generator: ^2.0.0`
+
+Runner - `build_runner: ^2.3.3`
 
 ## Images
+
+### Light Theme
 
 <br>
 <p float="left">
@@ -85,11 +73,14 @@ Icons - ```cupertino_icons: ^1.0.2```
   <img hspace="20"  src="assets/readme-files/intro-second.jpg" width="200" />
   <img hspace="20"  src="assets/readme-files/intro-third.jpg" width="200" />
   <img hspace="20" src="assets/readme-files/home.jpg" width="200" />
+  <img hspace="20" src="assets/readme-files/error.jpg" width="200" />
   <img hspace="20"  src="assets/readme-files/setting.jpg" width="200" />
   <img hspace="20"  src="assets/readme-files/theme-alert.jpg" width="200" />
   <img hspace="20" src="assets/readme-files/localization-alert.jpg" width="200" />
 </p>
 <br>
+
+### Dark Theme
 
 <br>
 <p float="left">
@@ -98,10 +89,9 @@ Icons - ```cupertino_icons: ^1.0.2```
   <img hspace="20"  src="assets/readme-files/intro-second-dark.jpg" width="200" />
   <img hspace="20"  src="assets/readme-files/intro-third-dark.jpg" width="200" />
   <img hspace="20" src="assets/readme-files/home-dark.jpg" width="200" />
+  <img hspace="20" src="assets/readme-files/error-dark.jpg" width="200" />
   <img hspace="20"  src="assets/readme-files/setting-dark.jpg" width="200" />
   <img hspace="20"  src="assets/readme-files/theme-alert-dark.jpg" width="200" />
   <img hspace="20" src="assets/readme-files/localization-alert-dark.jpg" width="200" />
 </p>
 <br>
-
-

@@ -1,44 +1,52 @@
 # Cryptocurrency Ranking App
 
-This application ranking popular crypto coins using Coin Market Cap Api.
+This application ranking popular crypto coins using Coin Market Cap Api built Flutter.
+
+<p>
+  <img src="assets\readme\cryptocurrency_video.gif" width="200">
+</p>
 
 ## Usage
 
 Add your CoinMarketCap Api key to ```'X-CMC_PRO_API_KEY'``` in ```lib/view/_product/constants/api/api_constants.dart``` file line 9.
 
-Architecture
+#### Architecture
 
 - Mvvm, Mvc
 
-State Management
+#### State Management
 
 - Cubit (bloc)
 
-Service
+#### Dependency Injection
 
-- Http
+- get it
 
-Routing
+#### Service
+
+- Http, Dio
+
+#### Routing
 
 - Go router
 
-Animation
+#### Animation
 
 - Lottie
 
-Splash Screen
+#### Splash Screen
 
 - Flutter native splash
 
-Onboarding
+#### Onboarding
 
 - Introduction screen
 
-Localization
+#### Localization
 
 - Easy localization
 
-App icon
+#### App icon
 
 - Flutter Launcher Icon
 
@@ -50,21 +58,23 @@ Dart ```2.19.6```
 
 Packages
 
-Icons - ```cupertino_icons: ^1.0.2```
-
-Localization - ```easy_localization: ^3.0.1```
+Dependency Injection - ```get_it: ^7.6.0```
 
 State management - ```flutter_bloc: ^8.1.2```
 
+Service - ```http: ^0.13.5, dio: ^5.1.2```
+
 Navigation ```go_router: - ^6.5.7```
 
-Local storage caching - ```hive: ^2.2.3```, ```hive_flutter: ^1.1.0```
+Caching - ```hive: ^2.2.3```, ```hive_flutter: ^1.1.0```
 
-Service - ```http: ^0.13.5```
+Localization - ```easy_localization: ^3.0.1```
 
 Onboarding - ```introduction_screen: ^3.1.4```
 
 Animation - ```lottie: ^2.3.2```
+
+Icons - ```cupertino_icons: ^1.0.2```
 
 ## Images
 
@@ -94,8 +104,4 @@ Animation - ```lottie: ^2.3.2```
 </p>
 <br>
 
-## Gif
 
-<p>
-  <img src="assets\readme\cryptocurrency_video.gif" width="200">
-</p>

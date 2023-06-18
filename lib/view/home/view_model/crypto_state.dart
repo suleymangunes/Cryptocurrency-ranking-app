@@ -1,5 +1,5 @@
 import 'package:cryptocurrency_ranking_app/product/enum/crypto/crypto_enums.dart';
-import 'package:flutter/foundation.dart';
+import 'package:equatable/equatable.dart';
 
 abstract class CryptoState {
   const CryptoState(this.status);
@@ -14,19 +14,12 @@ class CryptoLoading extends CryptoState {
   CryptoLoading() : super(CryptoStatus.loading);
 }
 
-class CryptoCompleted extends CryptoState {
+class CryptoCompleted extends CryptoState with EquatableMixin {
   CryptoCompleted(this.response) : super(CryptoStatus.completed);
   final List<dynamic> response;
 
   @override
-  bool operator ==(Object other) {
-    if (identical(this, other)) return true;
-
-    return other is CryptoCompleted && listEquals(other.response, response);
-  }
-
-  @override
-  int get hashCode => response.hashCode;
+  List<Object?> get props => [response];
 }
 
 class CryptoError extends CryptoState {

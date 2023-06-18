@@ -1,17 +1,20 @@
-class Crypto {
-  Crypto({this.id, this.name, this.symbol, this.slug, this.quote});
-  Crypto.fromJson(Map<String, dynamic> json) {
-    id = json['id'] as int;
-    name = json['name'].toString();
-    symbol = json['symbol'].toString();
-    slug = json['slug'].toString();
-    quote = json['quote'] != null ? Quote.fromJson(json['quote'] as Map<String, dynamic>) : null;
+import 'package:equatable/equatable.dart';
+
+class Crypto extends Equatable {
+  const Crypto({this.id, this.name, this.symbol, this.slug, this.quote});
+  factory Crypto.fromJson(Map<String, dynamic> json) {
+    final int id = json['id'];
+    final String name = json['name'];
+    final String symbol = json['symbol'];
+    final String slug = json['slug'];
+    final Quote quote = Quote.fromJson(json['quote']);
+    return Crypto(id: id, name: name, quote: quote, slug: slug, symbol: symbol);
   }
-  int? id;
-  String? name;
-  String? symbol;
-  String? slug;
-  Quote? quote;
+  final int? id;
+  final String? name;
+  final String? symbol;
+  final String? slug;
+  final Quote? quote;
 
   Map<String, dynamic> toJson() {
     final data = <String, dynamic>{};
@@ -24,6 +27,9 @@ class Crypto {
     }
     return data;
   }
+
+  @override
+  List<Object?> get props => [id];
 }
 
 class Quote {
@@ -57,32 +63,46 @@ class USD {
     this.marketCapDominance,
     this.fullyDilutedMarketCap,
   });
-  USD.fromJson(Map<String, dynamic> json) {
-    price = json['price'] as num;
-    volume24h = json['volume_24h'] as num;
-    volumeChange24h = json['volume_24h'] as num;
-    percentChange1h = json['percent_change_1h'] as num;
-    percentChange24h = json['percent_change_24h'] as num;
-    percentChange7d = json['percent_change_7d'] as num;
-    percentChange30d = json['percent_change_30d'] as num;
-    percentChange60d = json['percent_change_60d'] as num;
-    percentChange90d = json['percent_change_90d'] as num;
-    marketCap = json['market_cap'] as num;
-    marketCapDominance = json['market_cap_dominance'] as num;
-    fullyDilutedMarketCap = json['fully_diluted_market_cap'] as num;
+  factory USD.fromJson(Map<String, dynamic> json) {
+    final price = json['price'];
+    final volume24h = json['volume_24h'];
+    final volumeChange24h = json['volume_24h'];
+    final percentChange1h = json['percent_change_1h'];
+    final percentChange24h = json['percent_change_24h'];
+    final percentChange7d = json['percent_change_7d'];
+    final percentChange30d = json['percent_change_30d'];
+    final percentChange60d = json['percent_change_60d'];
+    final percentChange90d = json['percent_change_90d'];
+    final marketCap = json['market_cap'];
+    final marketCapDominance = json['market_cap_dominance'];
+    final fullyDilutedMarketCap = json['fully_diluted_market_cap'];
+    return USD(
+      price: price,
+      volume24h: volume24h,
+      volumeChange24h: volumeChange24h,
+      percentChange1h: percentChange1h,
+      percentChange24h: percentChange24h,
+      percentChange7d: percentChange7d,
+      percentChange30d: percentChange30d,
+      percentChange60d: percentChange60d,
+      percentChange90d: percentChange90d,
+      marketCap: marketCap,
+      marketCapDominance: marketCapDominance,
+      fullyDilutedMarketCap: fullyDilutedMarketCap,
+    );
   }
-  num? price;
-  num? volume24h;
-  num? volumeChange24h;
-  num? percentChange1h;
-  num? percentChange24h;
-  num? percentChange7d;
-  num? percentChange30d;
-  num? percentChange60d;
-  num? percentChange90d;
-  num? marketCap;
-  num? marketCapDominance;
-  num? fullyDilutedMarketCap;
+  final num? price;
+  final num? volume24h;
+  final num? volumeChange24h;
+  final num? percentChange1h;
+  final num? percentChange24h;
+  final num? percentChange7d;
+  final num? percentChange30d;
+  final num? percentChange60d;
+  final num? percentChange90d;
+  final num? marketCap;
+  final num? marketCapDominance;
+  final num? fullyDilutedMarketCap;
 
   Map<String, dynamic> toJson() {
     final data = <String, dynamic>{};
